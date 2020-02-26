@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times, "Times New Roman", serif;
+  margin: 0;
+}
+
+.header {
+  padding: 140px;
+  text-align: center;
+  background-image: url("gardensbythebay1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: olive;
+}
+
+.header h1 {
+  font-size: 80px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #333;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>GARDENS BY THE BAY</h1>
+</div>
+
+<div class="navbar">
+  <a href="#">Attractions</a>
+  <a href="#">Plan Your Visit</a>
+  <a href="#">Dining</a>
+  <a href="#">Shop</a>
+  <a href="#">Education</a>
+  <a href="#">Book a Venue</a>
+  <a href="#" class="right">Buy Tickets</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Gardens Map</h2>
+    <p>Navigate around Gardens by the Bay with ease.</p>
+    <img src="map.jpg" style="height:250px;" alt="Gardens Map"><br><br>
+	<a href="https://www.gardensbythebay.com.sg/content/dam/gbb/documents/plan-your-visit/gardens-by-the-bay-map-dec2019.pdf">Download Map</a><br><br>
+    <a href="https://www.google.com/maps/d/viewer?ie=UTF8&panoid=unO7IwB7F3VGw0OAO6jnIA&hl=en&msa=0&ll=1.280379999999998%2C103.86423100000002&spn=0.007165%2C0.012317&z=16&layer=c&cbll=1.278748%2C103.865392&cbp=11%2C256.7%2C%2C0%2C-9.43&mid=1_Lu7bt9Qw0r4U0Ro4xuljS2Il3U">Open in Street Directory</a><br><br>
+    <img src="contact.jpg" style="height:122px;" alt="Contact Us">
+	<a href="https://www.gardensbythebay.com.sg/en/forms/contact-us.html">
+	<p>Or click here to submit an enquiry!</p>
+	</a>
+  </div>
+  <div class="main">
+    <h2>Sakura Matsuri – Tale of the Peach Boy Floral Display</h2>
+    <p>Fri, 6 Mar 2020 - Sun, 29 Mar 2020 (Daily 9.00am - 9.00pm) @ Flower Dome</p>
+    <img src="sakura.jpg" style="height:250px;" alt="Sakura Matsuri">
+    <p>Witness the blossoming of spring at Sakura Matsuri – Tale of the Peach Boy as the Flower Dome transforms into a Japanese springtime landscape. Follow the adventures of the legendary Momotaro, a boy born from a peach, and meet the three adorable warriors that fought alongside him. Amidst a quaint backdrop featuring Gassho-style farmhouses with their distinctive, steep thatched roofs, a Japanese tea house and the quintessential torii gates, take in the ephemeral beauty of over 20 varieties of cherry and peach blossoms in this one-of-a-kind floral display.</p>
+    <br>
+    <h2>Symphony in the Gardens</h2>
+    <p>Sun, 15 Mar 2020 (6.30pm - 7.30pm) @ The Meadow</p>
+    <img src="symphony.jpg" style="height:250px;" alt="Symphony in the Gardens">
+    <p>Join us at Gardens by the Bay for a splendid open-air concert brought to you by the Singapore Symphony Orchestra (SSO)! Headed by Conductor Darrell Ang, the SSO will perform classical music pieces by Mozart, Lully, Tchaikovsky, Brahms as well as Prokofiev.</p>
+  </div>
+</div>
+
+<div class="footer">
+</div>
+
+</body>
+</html>
